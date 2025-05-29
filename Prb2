@@ -1,0 +1,21 @@
+import java.util.Scanner;
+class Main {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Enter three angles");
+        System.out.println("--------------");
+        System.out.println("Enter the First Angle :");
+        int ang1 = scan.nextInt();
+        System.out.println("Enter the Second Angle :");
+        int ang2 = scan.nextInt();
+        System.out.println("Enter the Third Angle :");
+        int ang3 = scan.nextInt();
+        System.out.println("------------------");
+        if (ang1+ang2+ang3==180){
+            System.out.println("Triangle Can Be Formed..");
+        }
+        else{
+            System.out.println("Triangle Cannot be formed..");
+        }
+    }
+}
