@@ -1,0 +1,24 @@
+import java.util.Scanner;
+class Main {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner (System.in);
+        System.out.println("Enter Your Dress Size:");
+         System.out.println("Enter From the Given Data 30,38,42");
+        int size = scan.nextInt();
+        switch(size){
+            case 30:
+                 System.out.println("Medium");
+                 break;
+            case 38:
+                 System.out.println("Large");
+                 break;
+            case 42:
+                 System.out.println("XLarge");
+                 break;
+            default :
+                  System.out.println("INVAILD SIZE !!");
+                 
+        }
+        
+    }
+}
