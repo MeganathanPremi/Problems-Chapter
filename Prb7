@@ -1,0 +1,19 @@
+import java.util.Scanner;
+class Main {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        System.out.print("Enter Your FirstName:");
+        String fname = scan.next();
+        System.out.print("Enter Your LastName:");
+        String lname = scan.next();
+        System.out.print("Enter the iteration number:");
+        int n = scan.nextInt();
+        System.out.println("----------------------");
+        for (int i=1;i<=n;i++){
+            System.out.println(i +"."+fname+lname);
+            
+        }
+        
+        
+    }
+}
