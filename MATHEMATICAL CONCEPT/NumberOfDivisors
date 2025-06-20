@@ -1,0 +1,22 @@
+class Main {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner (System.in);
+        int n=scan.nextInt();
+        int count=0;
+        ArrayList<Integer> divisibleBy3 = new ArrayList<>();
+        for (int i=1;i<=n;i++){
+            if (n%i==0){
+                System.out.println("divisors : "+i);
+                
+                if(i%3==0){
+                    divisibleBy3.add(i);
+                    count++;
+                }
+                
+            }
+            
+        }
+        System.out.println("the divisiors which are divisibke by 3 are "+divisibleBy3);
+        System.out.println("Count is "+count);
+        
+}
