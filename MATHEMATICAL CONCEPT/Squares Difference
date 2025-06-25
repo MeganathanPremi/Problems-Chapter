@@ -1,0 +1,11 @@
+https://www.geeksforgeeks.org/problems/squares-difference0939/1
+
+class Solution {
+    static long squaresDiff(int N) {
+        // code here
+        long sum = (long)N * (N + 1) /2;
+        long sumOfSquare =(long) (N * (N + 1)*(2*N + 1) / 6);
+        long squareOfSum = sum *sum;
+        return Math.abs(sumOfSquare - squareOfSum);
+    }
+}
