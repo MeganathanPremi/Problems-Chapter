@@ -1,0 +1,13 @@
+https://www.geeksforgeeks.org/problems/special-odd-series-sum1235/1
+
+class Solution {
+    static long sumOfTheSeries(long n) {
+        // code here
+        long sum=0,series=0;
+        for (int i=1;i<= 2*n-1;i=2+i){
+            sum = sum +i;
+            series = series + sum;
+        }
+        return series;
+    }
+}
