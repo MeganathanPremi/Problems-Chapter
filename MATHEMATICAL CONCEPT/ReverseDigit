@@ -1,0 +1,16 @@
+https://www.geeksforgeeks.org/problems/reverse-digit0316/1
+
+class Solution {
+    public int reverseDigits(int n) {
+        // Code here
+        int reverse =0;
+        while (n>0){
+            for(int i=1;i<=n;i++){
+                int lastDigit=n%10;
+                reverse = reverse*10+lastDigit;
+                n=n/10;
+            }
+        }
+        return reverse;
+    }
+}
