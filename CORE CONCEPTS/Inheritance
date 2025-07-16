@@ -1,0 +1,38 @@
+class person {    // PARENT or SUPER Class
+    private String name;
+    private int age;
+     
+     
+     public void setName(String name){
+         this.name = name;
+     }
+    public void  setAge(int age){
+         this.age = age;
+     }
+    
+    public String getName(){
+        return name;
+    }
+    public int getAge(){
+        return age;
+    }
+}
+
+class student extends person {    // Sub or child class
+    public String collegeName;
+    public void showCollege(String collegeName){
+        System.out.println("College Name is "+ collegeName);
+    }
+}
+class Main {
+    public static void main(String[] args) {
+        student s1 = new student ();
+        s1.setName("Premi");
+        s1.setAge(19);
+        
+        System.out.println("NAME : "+s1.getName());
+        System.out.println("AGE : "+s1.getAge());
+        s1.showCollege("Panimalar Engineering College");
+        
+    }
+}
