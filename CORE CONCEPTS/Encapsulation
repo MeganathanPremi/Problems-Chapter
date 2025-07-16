@@ -1,0 +1,48 @@
+class BankAccount {
+    private String accountNumber;
+    private String accountHolderName;
+    private double balance;
+    
+    public void setAccountNumber(String accountNumber){
+        this.accountNumber = accountNumber;
+    }
+    public String getAccountNumber(){
+        return accountNumber;
+    }
+    
+    public void setAccountHolderName(String name){
+        this.accountHolderName = name;
+    }
+    public String getAccountHolderName(){
+        return accountHolderName;
+    }
+    
+    public void deposit(double amount){
+        if(amount > 0){
+        this.balance = balance+amount;
+        }
+    }
+    public void withdraw(double amount){
+        if(amount > 0 && amount<=balance){
+            this.balance = balance-amount;
+        }
+    }
+    public double getBalance(){
+        return balance;
+    }
+}
+public class Main {
+    public static void main(String [] args){
+        BankAccount acc = new BankAccount();
+        acc.setAccountNumber("123356");
+        acc.setAccountHolderName("john");
+        acc.deposit(100000);
+        acc.deposit(500);
+        acc.withdraw(200);
+        
+        System.out.println("ACCOUNT NUMBER : "+acc.getAccountNumber());
+        System.out.println("ACCOUNT HOLDER NAME : "+acc.getAccountHolderName());
+        System.out.println("ACCOUNT BALANCE : "+"rs "+acc.getBalance());
+        
+    }
+}
